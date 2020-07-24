@@ -1,0 +1,7 @@
+{
+  "name": "eurokonkrete-com",
+  "short_name": "eurokonkrete-com",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/"
+}
