@@ -17,8 +17,12 @@ h1, h2, h3, h4, h5, h6{
 }
 
 #content{
-    padding-top: 5%;
     color: $content-color;
+    margin: 6rem auto;
+}
+
+.container {
+    padding: 0px;
 }
 
 .justify-content-center{
@@ -66,6 +70,12 @@ i{
 
 ::selection {
     background: $highlight;
+}
+
+.carousel-indicators li{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
 }
 
 .homepage {

@@ -1,8 +1,8 @@
-.navbar-light {
+.navbar.navbar-light {
   background: $nav-background;
   display: flex;
   a {
-    font-size: 14px !important;
+    font-size: 18px;
   }
 
   
@@ -11,7 +11,6 @@
     outline: none !important;
     padding: 0;
     span{
-      color: #ffffff !important;
       font-size: 24px;
     }
   }
@@ -19,27 +18,32 @@
   .navbar-brand {
     transition: all 0.5s;
     font-weight: 600;
-    letter-spacing: 2px;
-    line-height: 2.2em;
-    color: $base !important;
+    padding-top: 0;
+    letter-spacing: 2.2px;
+    font-family: 'Lobster', cursive;
+    color: $brand-color !important;
+    font-size: 26px;
+    span,
+    img{
+      vertical-align: middle !important;
+    }
+    span{
+      margin-left: 1rem;
+    }
   }
 
   .nav-link {
-    margin: 0 20px 0 0;
-    color: $base !important;
+    color: $link !important;
+    margin: 0 10px 0 0;
     display: inline-block;
     cursor: pointer;
     padding: 8px 14px;
-    // &:focus,
-    // &:hover {
-    //   background: hsla(0,0%,100%,.15);
-    // }
   }
   
   .nav-link:focus,
   .nav-link:hover,
   .nav-link.active {
-    background: hsla(0,0%,100%,.15);
+    color: $state-active !important;
   }
 
   .nav-link:hover::after {
@@ -51,7 +55,7 @@
 .footer{
   min-height: 44px;
   height: auto;
-  background-color: #272727 !important;
+  // background-color: #272727 !important;
   text-align: center !important;
   p{
     font-size: 12px !important;
