@@ -1,19 +1,17 @@
 
-<div class="wrapper">
-    <!-- HEADER -->
-    <header></header>
+<div class="wrapper" (window:scroll)="onWindowScroll($event)">
+    <!-- HEADER --> 
+    <header [className]="className"></header>
     <!-- ḤEADER -->
     <!-- CONTENT -->
-    <div id="content" class="container">
+    <div id="content" class="container-fluid">
         <router-outlet>
         </router-outlet>
     </div>
     <!-- CONTENT -->
     <!-- FOOTER -->
-    <nav class="navbar fixed-bottom navbar-expand-md navbar-light footer">
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <p>Copyright © 2020. All rights reserved by Euro Konkrete.</p>
-        </div>
+    <nav class="navbar fixed-bottom pos-absolute navbar-expand-md navbar-light footer">
+        <p>Copyright © 2020. All rights reserved by Euro Konkrete.</p>
     </nav>
     <!--FOOTER  -->
 </div>

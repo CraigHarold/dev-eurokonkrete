@@ -30,9 +30,9 @@
               "src/manifest.json"
             ],
             "styles": [
-              "./node_modules/bootstrap/scss/bootstrap.scss",
               "src/styles.scss",
               "src/assets/styles/common.scss",
+              "./node_modules/bootstrap/scss/bootstrap.scss",
               "./node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss"
             ],
             "scripts": [

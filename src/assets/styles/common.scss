@@ -17,9 +17,10 @@
     .navbar-brand{
         font-size: 22px !important;
     }
-    #content{
-        padding: 5.5rem 0;
-    }
+}
+
+@media screen and (max-width: 576px){
+
 }
 
 @media screen and (max-width: 767px){
@@ -27,30 +28,10 @@
         text-align: left;
         padding-top: 50%;
     }
-    #content{
-        padding: 5.5rem 0;
-    }
-    .homepage .btn-primary:active,
-    .homepage .btn-primary:focus,
-    .btn-primary:focus, .btn-primary.focus,
-    .btn-primary:not(:disabled):not(.disabled):active:focus
-    .btn-secondary:not(:disabled):not(.disabled):active:focus,
-    .btn-secondary:focus, .btn-secondary.focus{
-        box-shadow: none !important;
-    }
-    .accordion {
-        .card{
-            .card-header{
-                button{
-                    padding-left: 5px;
-                }
-            }
-            .card-body{
-                border-top: 1px solid $base;
-                padding: 10px;
-            }
-        }
-    }
+    // #content{
+    //     padding: 5.5rem 0;
+    // }
+    
     .navbar.navbar-light {
         padding: 0;
         .navbar-brand{
@@ -75,6 +56,10 @@
         }
         ul.ml-auto{
             margin: 0;
+            .nav-link {
+                color: $link !important;
+                background: rgba(255, 255, 255, 0.884)
+            }
         }
     }
 }
@@ -116,50 +101,6 @@
         top: auto;
     }
 }
-
-@media screen and (min-width: 992px) {
-    h1{
-        letter-spacing: 1px;
-    }
-    
-    .about {
-        margin-bottom: 0;
-    }
-
-    .hidden-lg{
-        display: none !important;
-        z-index: 0;
-        visibility: hidden;
-        opacity: 0;
-    }
-
-    .navbar.navbar-light {
-        padding: 1rem 4rem;
-    }
-
-    .accordion{
-        .card{
-            display: inline-block;
-            width: 100%;
-            .collapse.show,
-            .card-header{
-                display: -webkit-inline-flex;
-                display: inline-flex;
-            }
-            .card-header{
-                width: 20%;
-            }
-            .collapse.show{
-                width: 80%;
-                padding: 0 20px;
-            }
-            .collapsing{
-                display: none;
-            }
-        }
-    }
-}
-
 @media screen and (min-width: 768px) {
     h1{
         font-size: 46px;
@@ -210,5 +151,48 @@
     }
     ul.ml-auto{
         text-align: right;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    h1{
+        letter-spacing: 1px;
+    }
+    
+    .about {
+        margin-bottom: 0;
+    }
+
+    .hidden-lg{
+        display: none !important;
+        z-index: 0;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .navbar.navbar-light {
+        padding: 1rem 4rem;
+    }
+
+    .accordion{
+        .card{
+            display: inline-block;
+            width: 100%;
+            .collapse.show,
+            .card-header{
+                display: -webkit-inline-flex;
+                display: inline-flex;
+            }
+            .card-header{
+                width: 20%;
+            }
+            .collapse.show{
+                width: 80%;
+                padding: 0 20px;
+            }
+            .collapsing{
+                display: none;
+            }
+        }
     }
 }

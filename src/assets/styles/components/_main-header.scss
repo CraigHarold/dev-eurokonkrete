@@ -1,5 +1,5 @@
 .navbar.navbar-light {
-  background: $nav-background;
+  background: transparent;
   display: flex;
   a {
     font-size: 18px;
@@ -21,10 +21,11 @@
     padding-top: 0;
     letter-spacing: 2.2px;
     font-family: 'Lobster', cursive;
-    color: $brand-color !important;
+    color: $white !important;
     font-size: 26px;
     span,
     img{
+      transition: all 0.5s ease-in-out;
       vertical-align: middle !important;
     }
     span{
@@ -33,7 +34,7 @@
   }
 
   .nav-link {
-    color: $link !important;
+    color: $white;
     margin: 0 10px 0 0;
     display: inline-block;
     cursor: pointer;
@@ -52,10 +53,25 @@
 
 }
 
+.navbar.navbar-light.scrolledHeader{
+  .navbar-brand{
+    color: $brand-color !important;
+  }
+  .nav-link {
+    color: $link !important;
+  }
+  background: $nav-background !important;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
 .footer{
   min-height: 44px;
   height: auto;
-  // background-color: #272727 !important;
+  background-color: #0000000f !important;
   text-align: center !important;
   p{
     font-size: 12px !important;
@@ -70,6 +86,12 @@
 
 ul.ml-auto {
   margin: 8px;
+  .nav-item:last-child{
+    a {
+      padding-right: 0px;
+      margin-right: 0px !important;
+    }
+  }
 }
 
 .dropdown-menu{

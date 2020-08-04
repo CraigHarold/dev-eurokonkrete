@@ -1,6 +1,6 @@
 body {
-    background-color: $body-background;
-    color: $base;
+    // background-color: $body-background;
+    // color: $base;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -18,11 +18,9 @@ h1, h2, h3, h4, h5, h6{
 
 #content{
     color: $content-color;
-    margin: 6rem auto;
-}
-
-.container {
-    padding: 0px;
+    width: 100% !important;
+    margin: 0 auto;
+    padding-top: 6rem;
 }
 
 .justify-content-center{
@@ -32,6 +30,12 @@ h1, h2, h3, h4, h5, h6{
     -ms-flex-align: center!important;
     align-items: center!important;
 }
+
+.jumbotron {
+    border-radius: 0px !important;
+    margin-bottom: 4rem !important;
+}
+
 .highlight{
     color: $link;
 }
@@ -66,6 +70,10 @@ i{
 .left{
     text-align: left;
     padding-top: 0;
+}
+
+.pos-absolute{
+    position: absolute !important;
 }
 
 ::selection {
@@ -179,6 +187,7 @@ i{
 
 
 .carousel{
+    margin: -6rem -15px 20px-15px;
     img{
         max-height: 400px;
     }
