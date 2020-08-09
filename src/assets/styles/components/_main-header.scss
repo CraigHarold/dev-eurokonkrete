@@ -2,6 +2,7 @@
   background: #6a655f;
   padding: 0 4rem 0 0;
   display: flex;
+  min-height: 66px;
   a {
     font-size: 18px;
   }
@@ -20,22 +21,14 @@
   .navbar-brand {
     transition: all 0.5s;
     font-weight: 600;
+    max-width: 60%;
+    padding: 0;
     z-index: 999;
-    padding-top: 0;
-    letter-spacing: 2.2px;
-    font-family: 'Lobster', cursive;
-    color: $white !important;
-    font-size: 26px;
-    padding: 0 !important;
-    // span,
     img{
       height: 104px;
       width: 20%;
       transition: all 0.5s ease-in-out;
       vertical-align: middle !important;
-    }
-    span{
-      margin-left: 1rem;
     }
   }
 
@@ -75,10 +68,9 @@
 }
 
 .footer{
-  min-height: 44px;
-  height: auto;
-  background-color: #0000000f !important;
+  height: 44px;
   text-align: center !important;
+  background: #dfdfdf;
   p{
     font-size: 12px !important;
     margin: 0 auto;

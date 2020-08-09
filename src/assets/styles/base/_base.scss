@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5, h6{
     width: 100% !important;
     margin: 0 auto;
     padding-top: 6.5rem;
-    margin-bottom: 4.5rem;
+    margin-bottom: 4rem;
 }
 
 .justify-content-center{
@@ -43,6 +43,21 @@ h1, h2, h3, h4, h5, h6{
 .align-items-center{
     -ms-flex-align: center!important;
     align-items: center!important;
+}
+
+.text-align-justify{
+    text-align: justify;
+}
+
+
+.vertical-center {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.p-t{
+    padding-top: 12px;
 }
 
 .jumbotron {
@@ -84,11 +99,6 @@ h3 {
 
 i{
     margin-right: 5px;
-}
-
-.left{
-    text-align: left;
-    padding-top: 0;
 }
 
 .pos-absolute{
@@ -200,7 +210,7 @@ i{
 }
 
 .carousel{
-    margin: -6rem -15px 20px-15px;
+    margin: -6rem -15px 16px -15px;
     img{
         max-height: 400px;
     }

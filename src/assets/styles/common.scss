@@ -12,33 +12,26 @@
     'components/home';
 
 @media screen and (max-width: 375px){
-    .left{
-        padding-top: 20%;
-    }
-    .navbar-brand{
-        font-size: 22px !important;
-    }
+
 }
 
 @media screen and (max-width: 576px){
+    .navbar-brand{
+        max-width: 40% !important;
+        img {            
+            height: 66px !important;
+            width: 100% !important;
+        }
+    }
 
+    .address {
+        text-align: left !important;
+    }
 }
 
 @media screen and (max-width: 767px){
-    .left{
-        text-align: left;
-        padding-top: 50%;
-    }
-    // #content{
-    //     padding: 5.5rem 0;
-    // }
-    
     .navbar.navbar-light {
         padding: 0;
-        .navbar-brand{
-            padding: 1.5rem 0px 1.5rem 10px;
-            margin: 0;
-        }
         .navbar-toggler{
             margin-right: 1.5rem;
             padding: 8px;
@@ -58,10 +51,47 @@
         ul.ml-auto{
             margin: 0;
             .nav-link {
-                color: $link !important;
+                color: #000000ab !important;
                 background: rgba(255, 255, 255, 0.884)
             }
         }
+    }
+
+    #map{
+        height: 220px;
+    }
+
+    #content{
+        padding-top: 24%;
+        margin-bottom: 3.5rem;
+    }
+    
+    #about,
+    #contact {
+        border: none;
+        width: 100% !important;
+        margin: 0 auto !important;
+        padding: 0px !important;
+    }
+
+    .address {
+        text-align: left !important;
+    }
+
+    .footer{
+        // position: fixed; 
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .col-sm{
+        padding: 0px;
+    }
+
+    p{
+        margin-bottom: 5px !important;
     }
 }
 
@@ -69,9 +99,6 @@
     .navbar{
         background-color: $nav-background;
         z-index: 9;
-        .navbar-brand {
-          letter-spacing: 3px;
-        }
     }
 
     .hidden-sm {
@@ -103,6 +130,12 @@
     }
 }
 @media screen and (min-width: 768px) {
+    
+
+    .footer{
+        position: relative !important;
+    }
+
     h1{
         font-size: 46px;
     }
@@ -113,13 +146,6 @@
 
     #home{
         padding-top: 104px;
-    }
-    
-    .vertical-center{
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        left: 12%;
     }
 
     .btn-secondary {
@@ -133,13 +159,6 @@
         }
     }
 
-    .btn-secondary:focus, .btn-secondary.focus{
-        box-shadow: 0 0 0 0.1rem $btn-sec-hov;
-    }
-    .btn-primary:focus, .btn-primary.focus,
-    .btn-primary:not(:disabled):not(.disabled):active:focus{
-        box-shadow: 0 0 0 0.1rem $btn-pri-hov;
-    }
     .wrapper {
         width: 100%;
         margin: 0 auto;
@@ -148,14 +167,13 @@
         overflow-x: hidden;
         overflow-y: auto;
     }
-    .vertical-center {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        left: 10%;
-    }
+
     ul.ml-auto{
         text-align: right;
+    }
+    
+    .address {
+        text-align: center !important;
     }
 }
 
