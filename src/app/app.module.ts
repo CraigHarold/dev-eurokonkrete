@@ -6,8 +6,9 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/shared/header/header.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
-import { CompanyComponent } from './components/company/company.component';
-import { LocationComponent } from './components/location/location.component';
+import { ContactComponent } from './components/contact/contact.component';
+import {} from 'googlemaps';
+
 
 @NgModule({
   declarations: [
@@ -15,8 +16,7 @@ import { LocationComponent } from './components/location/location.component';
     HeaderComponent,
     HomeComponent,
     AboutComponent,
-    CompanyComponent,
-    LocationComponent
+    ContactComponent
   ],
   imports: [
     BrowserModule,

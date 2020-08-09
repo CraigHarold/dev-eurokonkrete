@@ -1,5 +1,6 @@
 .navbar.navbar-light {
-  background: transparent;
+  background: #6a655f;
+  padding: 0 4rem 0 0;
   display: flex;
   a {
     font-size: 18px;
@@ -13,18 +14,23 @@
     span{
       font-size: 24px;
     }
+    z-index: 999;
   }
 
   .navbar-brand {
     transition: all 0.5s;
     font-weight: 600;
+    z-index: 999;
     padding-top: 0;
     letter-spacing: 2.2px;
     font-family: 'Lobster', cursive;
     color: $white !important;
     font-size: 26px;
-    span,
+    padding: 0 !important;
+    // span,
     img{
+      height: 104px;
+      width: 20%;
       transition: all 0.5s ease-in-out;
       vertical-align: middle !important;
     }
@@ -34,7 +40,7 @@
   }
 
   .nav-link {
-    color: $white;
+    color: $white !important;
     margin: 0 10px 0 0;
     display: inline-block;
     cursor: pointer;
@@ -44,7 +50,7 @@
   .nav-link:focus,
   .nav-link:hover,
   .nav-link.active {
-    color: $state-active !important;
+    background-color: $state-active !important;
   }
 
   .nav-link:hover::after {
@@ -88,7 +94,7 @@ ul.ml-auto {
   margin: 8px;
   .nav-item:last-child{
     a {
-      padding-right: 0px;
+      // padding-right: 0px;
       margin-right: 0px !important;
     }
   }

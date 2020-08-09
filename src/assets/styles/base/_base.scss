@@ -1,26 +1,40 @@
 body {
-    // background-color: $body-background;
+    background-color: $body-background;
     // color: $base;
 }
 
 h1, h2, h3, h4, h5, h6{
     font-family: inherit;
-    color: $base;
+    color: #8a8a8a;
 }
 
 .fixed-top{
-    position: fixed;
+    position: fixed !important;
     top: 0;
     right: 0;
     left: 0;
     z-index: 1030;
+    // background: url('../../images/background.png') !important;
+}
+
+.container{
+    background: #fff;
+    min-width: 60% !important;
+    min-height: 90% !important;
+    margin: 60% auto;
+}
+
+.nav-background{
+    position: absolute;
+
 }
 
 #content{
     color: $content-color;
     width: 100% !important;
     margin: 0 auto;
-    padding-top: 6rem;
+    padding-top: 6.5rem;
+    margin-bottom: 4.5rem;
 }
 
 .justify-content-center{
@@ -34,6 +48,11 @@ h1, h2, h3, h4, h5, h6{
 .jumbotron {
     border-radius: 0px !important;
     margin-bottom: 4rem !important;
+}
+
+#map {
+    height: 320px;  /* The height is 400 pixels */
+    width: 100%;  /* The width is the width of the web page */
 }
 
 .highlight{
@@ -55,11 +74,11 @@ h1{
 }
 
 h3 {
-    color: $light-gray;
-    font-size: 13px;
+    color: #8a8a8a;
+    // font-size: 13px;
     padding-top: 20px;
-    font-style: italic;
-    max-width: 80%;
+    // font-style: italic;
+    // max-width: 80%;
     line-height: 1.5em;
 }
 
@@ -165,26 +184,20 @@ i{
     height: 14px;
 }
 
-.accordion{
-    width: 100%;
-    .card{
-        padding: 10px;
-        background-color: #3c3c3c;
-        .card-header{
-            padding: 0;
-            background: transparent;
-            border: none;
-            button{
-                color: $base;
-                background: transparent;
-            }
-        }
-        .card-body{
-            padding: 0;
-        }
-    }
+#about,
+#contact{
+    padding: 16px;
+    width: 70%;
+    margin: 0 auto;
+    background: #fff;
+    margin-top: 3%;
+    border: 1px solid #b7b6b6;
 }
 
+#contact h3{
+    //font-size: 1.25rem !important;
+    text-decoration: underline;
+}
 
 .carousel{
     margin: -6rem -15px 20px-15px;
