@@ -68,6 +68,7 @@ h1, h2, h3, h4, h5, h6{
 #map {
     height: 320px;  /* The height is 400 pixels */
     width: 100%;  /* The width is the width of the web page */
+    margin-bottom: 16px;
 }
 
 .highlight{
@@ -204,9 +205,15 @@ i{
     border: 1px solid #b7b6b6;
 }
 
-#contact h3{
-    //font-size: 1.25rem !important;
-    text-decoration: underline;
+#contact {
+    h3{
+        //font-size: 1.25rem !important;
+        padding-top: 0px;
+        text-decoration: underline;
+    }
+    .jumbotron{
+        margin-bottom: 0px !important;
+    }
 }
 
 .carousel{

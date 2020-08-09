@@ -10,10 +10,24 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="manifest" href="./manifest.json">
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,600" rel="stylesheet">
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDskBU6kJ5CT7WUojJnGZbPdUphWttK6nY
-  &callback=initMap" type="text/javascript"></script>
+  <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?libraries=places&sensor=false&&key=AIzaSyAe6I3Tp3ReyTU6lRC-ayDVsBaYB_3XsiQ"></script>
+  <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAe6I3Tp3ReyTU6lRC-ayDVsBaYB_3XsiQ
+  &callback=initMap" type="text/javascript"></script> -->
 </head>
 <body class="mat-typography">
+	
+	<script>
+		// Initialize and add the map
+		function initMap() {
+		  // The location of Uluru
+		  var uluru = {lat: -25.344, lng: 131.036};
+		  // The map, centered at Uluru
+		  var map = new google.maps.Map(
+			  document.getElementById('map'), {zoom: 4, center: uluru});
+		  // The marker, positioned at Uluru
+		  var marker = new google.maps.Marker({position: uluru, map: map});
+		}
+	</script>
 	<script>
 		(function () {
 		  // Retrieve the URL the user was trying to access when receiving the 404.
