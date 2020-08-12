@@ -23,6 +23,15 @@ h1, h2, h3, h4, h5, h6{
     width: 16px;
 }
 
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.company-name{
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+}
+
 .container{
     // background: #fff;
     min-width: 60% !important;

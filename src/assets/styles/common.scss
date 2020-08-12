@@ -30,6 +30,9 @@
 }
 
 @media screen and (max-width: 767px){
+    body {
+        font-size: 14px !important;
+    }
     .navbar.navbar-light {
         padding: 0;
         .navbar-brand{
@@ -70,7 +73,7 @@
 
     #content{
         padding-top: 24%;
-        margin-bottom: 3.5rem;
+        margin-bottom: 5rem;
     }
     
     #about,
@@ -85,7 +88,17 @@
     //     text-align: left !important;
     // }
 
+    p{
+        margin-bottom: 5px !important;
+    }
+
     .footer{
+        p {
+            font-size: 8px !important;
+        }
+        .p-t{
+            padding-top: 5%;
+        }
         position: fixed; 
         right: 0;
         bottom: 0;
@@ -95,10 +108,6 @@
 
     .col-sm{
         padding: 0px;
-    }
-
-    p{
-        margin-bottom: 5px !important;
     }
     #contact .jumbotron{
         padding: 1rem;
