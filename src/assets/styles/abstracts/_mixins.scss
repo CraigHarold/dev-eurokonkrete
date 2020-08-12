@@ -1,5 +1,5 @@
 /// Mixin to customize scrollbars
-/// Beware, this does not work in all browsers
+
 /// @author Anurag Gupta
 /// @param {Length} $size - Horizontal scrollbar's height and vertical scrollbar's width
 /// @param {Color} $foreground-color - Scrollbar's color
@@ -31,8 +31,3 @@
   }
   @include scrollbars(0.2em, $slate-gray);
 
-
-  @function theme-color($key: 'primary', $variant: 'base') {
-    $map: map-get($theme-colors, $key);
-    @return map-get($map, $variant);
-  }

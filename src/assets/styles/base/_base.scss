@@ -5,7 +5,7 @@ body {
 
 h1, h2, h3, h4, h5, h6{
     font-family: inherit;
-    color: #8a8a8a;
+    // color: #8a8a8a;
 }
 
 .fixed-top{
@@ -18,10 +18,19 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .container{
-    background: #fff;
+    // background: #fff;
     min-width: 60% !important;
     min-height: 90% !important;
-    margin: 60% auto;
+    // margin: 60% auto;
+}
+
+.coming-soon{
+    h1 {
+        font-size: 3rem;
+    }
+    h4 {
+        font-size: 2rem !important;
+    }
 }
 
 .nav-background{
@@ -32,6 +41,7 @@ h1, h2, h3, h4, h5, h6{
 #content{
     color: $content-color;
     width: 100% !important;
+    min-height: 90vh;
     margin: 0 auto;
     padding-top: 6.5rem;
     margin-bottom: 4rem;
@@ -96,6 +106,10 @@ h3 {
     // font-style: italic;
     // max-width: 80%;
     line-height: 1.5em;
+}
+
+.m-b{
+
 }
 
 i{
@@ -201,7 +215,7 @@ i{
     width: 70%;
     margin: 0 auto;
     background: #fff;
-    margin-top: 3%;
+    margin-top: 7%;
     border: 1px solid #b7b6b6;
 }
 

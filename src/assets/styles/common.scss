@@ -24,14 +24,21 @@
         }
     }
 
-    .address {
-        text-align: left !important;
-    }
+    // .address {
+    //     text-align: left !important;
+    // }
 }
 
 @media screen and (max-width: 767px){
     .navbar.navbar-light {
         padding: 0;
+        .navbar-brand{
+            margin-right: 0;
+        }
+        .tag-line{
+            font-size: 0.5rem;
+            margin: 0 auto;
+        }
         .navbar-toggler{
             margin-right: 1.5rem;
             padding: 8px;
@@ -70,13 +77,13 @@
     #contact {
         border: none;
         width: 100% !important;
-        margin: 0 auto !important;
-        padding: 0px !important;
+        margin-top: 28% !important;
+        padding: 8px !important;
     }
 
-    .address {
-        text-align: left !important;
-    }
+    // .address {
+    //     text-align: left !important;
+    // }
 
     .footer{
         position: fixed; 
@@ -148,7 +155,7 @@
     }
 
     #home{
-        padding-top: 104px;
+        padding-top: 6%;
     }
 
     .btn-secondary {
@@ -173,10 +180,6 @@
 
     ul.ml-auto{
         text-align: right;
-    }
-    
-    .address {
-        text-align: center !important;
     }
 }
 

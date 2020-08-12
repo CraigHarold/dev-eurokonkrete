@@ -10,7 +10,7 @@ export class AppComponent {
   className: string = "";
   onWindowScroll(event) {
     // console.log(event, window.pageYOffset);
-    // if (window.pageYOffset > 60) this.className = "scrolledHeader";
+    // if (window.pageYOffset > 10) this.className = "scrolled";
     // else this.className = "";
   }
 }
