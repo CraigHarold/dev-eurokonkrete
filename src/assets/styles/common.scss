@@ -11,17 +11,20 @@
     'components/contact',
     'components/home';
 
-@media screen and (max-width: 375px){
-
-}
 
 @media screen and (max-width: 576px){
     .navbar-brand{
+        width: auto !important;
         max-width: 40% !important;
         img {            
-            height: 66px !important;
-            width: 100% !important;
+            height: 74px !important;
+            margin-left: 0px !important;
+            // width: 100% !important;
         }
+    }
+    .tag-line{
+        font-size: 0.6rem !important;
+        margin: 0 auto;
     }
 
     // .address {
@@ -29,14 +32,19 @@
     // }
 }
 
+
 @media screen and (max-width: 767px){
     .navbar.navbar-light {
         padding: 0;
         .navbar-brand{
             margin-right: 0;
+            img {
+                height: 74px;
+                margin-left: 30%;
+            }
         }
         .tag-line{
-            font-size: 0.5rem;
+            font-size: 1rem;
             margin: 0 auto;
         }
         .navbar-toggler{
@@ -173,7 +181,7 @@
     }
 
     #home{
-        padding-top: 6%;
+        padding-top: 12%;
     }
 
     .btn-secondary {
