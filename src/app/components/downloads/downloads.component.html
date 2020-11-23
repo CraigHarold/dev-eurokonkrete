@@ -1,0 +1,10 @@
+<div id="downloads" class="container-fluid row">
+    <div *ngFor="let download of downloads" class="col-sm-6">
+        <h2 class="">{{download.title}}</h2>
+        <div class="" *ngFor="let link of download.links; let index=index; ">
+            <span *ngIf="!link.isText">{{index + 1}}. </span>
+            <a *ngIf="!link.isText" href={{link.url}} title={{link.url}} class="link underlined" target="_blank">{{link.name}}</a>
+            <label *ngIf="link.isText">{{index + 1}}. <b>{{link.name}}</b><br>{{link.url}}</label>
+        </div>
+    </div>
+</div>

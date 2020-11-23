@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5, h6{
     // background: #fff;
     min-width: 60% !important;
     min-height: 90% !important;
-    // margin: 60% auto;
+    margin: 0 auto;
 }
 
 .coming-soon{
@@ -58,7 +58,9 @@ h1, h2, h3, h4, h5, h6{
     width: 100% !important;
     min-height: 90vh;
     margin: 0 auto;
-    padding-top: 6.5rem;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 9.5rem;
     margin-bottom: 4rem;
 }
 
@@ -123,8 +125,14 @@ h3 {
     line-height: 1.5em;
 }
 
-.m-b{
+.link {
+    color: $highlight;
+}
 
+.container,
+.container img,
+.m-0-auto{
+    margin: 0 auto;
 }
 
 i{
@@ -143,6 +151,10 @@ i{
     width: 22px;
     height: 22px;
     border-radius: 50%;
+}
+
+.carousel-item img {
+    margin: 0 auto;
 }
 
 .homepage {
@@ -224,6 +236,7 @@ i{
     height: 14px;
 }
 
+#downloads,
 #about,
 #contact{
     padding: 16px;
@@ -247,7 +260,8 @@ i{
 
 .carousel{
     margin: -6rem -15px 16px -15px;
-    img{
-        max-height: 400px;
-    }
+}
+
+.underlined{
+    text-decoration: underline;
 }

@@ -26,10 +26,6 @@
         font-size: 0.6rem !important;
         margin: 0 auto;
     }
-
-    // .address {
-    //     text-align: left !important;
-    // }
 }
 
 
@@ -81,6 +77,7 @@
         margin-bottom: 5rem;
     }
     
+    #downloads,
     #about,
     #contact {
         border: none;
@@ -180,9 +177,9 @@
         font-size: 16px;
     }
 
-    #home{
-        padding-top: 12%;
-    }
+    // #home{
+    //     padding-top: 10%;
+    // }
 
     .btn-secondary {
         margin-left: 20px;
@@ -207,6 +204,12 @@
     ul.ml-auto{
         text-align: right;
     }
+
+    .m-w-400{
+        min-width: 400;
+    }
+
+
 }
 
 @media screen and (min-width: 992px) {

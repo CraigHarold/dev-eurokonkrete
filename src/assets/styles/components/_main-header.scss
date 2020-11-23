@@ -45,13 +45,13 @@
     font-size: 27px;
     text-transform: uppercase;
     .values{
-      color: #3355e3;
+      color: $highlight !important;
     }
     // font-family: 'Courgette', cursive !important;
   }
 
   .nav-link {
-    color: $white !important;
+    // color: $white !important;
     margin: 0 10px 0 0;
     display: inline-block;
     cursor: pointer;
@@ -61,7 +61,8 @@
   .nav-link:focus,
   .nav-link:hover,
   .nav-link.active {
-    background-color: $state-active !important;
+    color: $highlight !important;
+    // background-color: $state-active !important;
   }
 
   .nav-link:hover::after {
