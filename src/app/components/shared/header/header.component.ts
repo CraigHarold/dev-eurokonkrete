@@ -13,8 +13,14 @@ export class HeaderComponent implements OnInit {
       },
       {
           "name": "About",
-          "url": "/about",
-          "sequence": 2
+          "url": "",
+          "sequence": 2,
+          "subChild": [
+              {
+                  "name": "Pudlo",
+                  "url": "/about",
+              }
+          ]
       },
       {
           "name": "Downloads",

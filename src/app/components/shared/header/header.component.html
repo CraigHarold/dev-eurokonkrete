@@ -12,11 +12,16 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
         <ul class="navbar-nav ml-auto">
-            <li *ngFor="let header of headers" class="nav-item active" data-toggle="collapse" data-target=".navbar-collapse.show">
-                <a class="nav-link" routerLink={{header.url}} routerLinkActive="active" [routerLinkActiveOptions]="{exact:
-                    true}">
+            <li *ngFor="let header of headers" class="nav-item active" data-toggle="collapse" data-target=".navbar-collapse.show" [ngClass]="{'dropdown': !header.url}">
+                <a *ngIf="header.url" class="nav-link" routerLink={{header.url}} routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" >
                     <span>{{header.name}}</span>
                 </a>
+                <a *ngIf="!header.url" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span>{{header.name}}</span></a>
+                <ul [hidden]="header.url" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li *ngFor="let subHeader of header.subChild">
+                        <a class="dropdown-item" routerLink={{subHeader.url}} routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">{{subHeader.name}}</a>
+                    </li>
+                </ul>                
             </li>
         </ul>                
     </div>

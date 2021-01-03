@@ -29,5 +29,5 @@
       scrollbar-track-color: $background;
     }
   }
-  @include scrollbars(0.2em, $slate-gray);
+  @include scrollbars(1em, $slate-gray);
 

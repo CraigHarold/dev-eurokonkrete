@@ -228,29 +228,4 @@
         opacity: 0;
     }
 
-    // .navbar.navbar-light {
-    //     padding: 1rem 4rem;
-    // }
-
-    .accordion{
-        .card{
-            display: inline-block;
-            width: 100%;
-            .collapse.show,
-            .card-header{
-                display: -webkit-inline-flex;
-                display: inline-flex;
-            }
-            .card-header{
-                width: 20%;
-            }
-            .collapse.show{
-                width: 80%;
-                padding: 0 20px;
-            }
-            .collapsing{
-                display: none;
-            }
-        }
-    }
 }
