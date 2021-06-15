@@ -1,10 +1,11 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'header',
-  templateUrl: './header.component.html'
+  selector: 'app-side-nav',
+  templateUrl: './side-nav.component.html',
+  styleUrls: ['./side-nav.component.scss']
 })
-export class HeaderComponent implements OnInit {
+export class SideNavComponent implements OnInit {
   headers = [
       {
           "name": "Home",

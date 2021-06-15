@@ -19,3 +19,96 @@ body {
     -webkit-overflow-scrolling: touch;
 }
 //body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+  
+  
+  
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 33%;
+    padding: 0 10px;
+  }
+  
+  .row {
+      margin:0;
+  }
+  
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(85, 5, 5, 0.705);
+    padding: 16px;
+    text-align: center;
+    color:rgb(0, 0, 0);
+    border-radius: 25px;
+    background-color: #ffffff;
+  }
+  .card1 {
+      box-shadow: 0 4px 8px 0 rgba(85, 5, 5, 0.705);
+      padding: 16px;
+      text-align: center;
+      color:#080808;
+      border-radius: 25px;
+      background-color: #ffffff;
+    }
+    .card2 {
+      box-shadow: 0 4px 8px 0 rgba(85, 5, 5, 0.705);
+      padding: 16px;
+      text-align: center;
+      border-radius: 25px;
+      color:#0c0c0c;
+      background-color: #ffffff;
+    }
+  
+  /* -------------------------------------------------------------------------
+     begin Separator
+   * ------------------------------------------------------------------------- */
+   
+   
+  .separator {
+      padding-top: 40px;
+      overflow: hidden;
+      display: block;
+      width: 100%;
+  }
+  /* -------------------------------------------------------------------------
+     end Separator
+   * ------------------------------------------------------------------------- */
+  
+  /* begin Media Max-Width 767
+  ============================================================================ */
+  
+  @media screen and (max-width: 767px) {
+    .section-one {
+      padding: 130px 0 190px;
+    }
+    .separator {
+      bottom: -110px;
+    }
+    .separator .separator__svg {
+          left: -20%;
+          position: relative;
+          transform: rotate(15deg);
+          width: 140%;
+      }
+  }
+  
+  /* end Media Max-Width 767
+  ============================================================================ */

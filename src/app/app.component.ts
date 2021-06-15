@@ -10,7 +10,7 @@ export class AppComponent {
   className: string = "";
 
   onWindowScroll(event) {
-    console.log(event, window);
+    // console.log(event, window);
     if (window.pageYOffset > 10 && window.innerWidth > 768) this.className = "scrolled";
     else this.className = "";
   }

@@ -1,18 +1,43 @@
 
 <div class="wrapper" (window:scroll)="onWindowScroll($event)">
-    <!-- HEADER --> 
-    <header [className]="className"></header>
-    <!-- ḤEADER -->
-    <!-- CONTENT -->
-    <div id="content" class="container-fluid">
-        <router-outlet>
-        </router-outlet>
+    <header class="nav-down responsive-nav hidden-lg hidden-md">
+        <!------------------------------LEFT NAV-------------------------------------------->
+        <app-side-nav class=" hidden-lg hidden-md"></app-side-nav>
+        <!------------------------------LEFT NAV-------------------------------------------->
+    </header>
+    
+    <div  class='animated bounceInDown'>
+
+        <!------------------------------LEFT NAV-------------------------------------------->
+        <app-side-nav></app-side-nav>
+        <!------------------------------LEFT NAV-------------------------------------------->
+
+        <!------------------------------RIGHT CONTENT--------------------------------------->
+        <router-outlet></router-outlet>
+        <!------------------------------RIGHT CONTENT--------------------------------------->
+
+        
+
+        <div class="live-chat-widget">
+            <button class="live-chat-button">
+                <a target="_blank" href="https://www.linkedin.com/in/harold-solomon-a62a0676/">
+                    <img src="../assets/images/linkedin.png" alt="Responsive image" width="80px" />
+                </a>
+                <!-- <svg>
+                <g>
+                    <path d="M19.6906034,42 L16.0186034,42 L16.0186034,38.191 C16.8225403,39.8075313 18.1045912,41.1374148 19.6906034,42 L19.6906034,42 Z M32.8906034,28.823 L24.1056034,28.823 C21.2769557,28.8623314 19.0045252,31.1665788 19.0045252,33.9955 C19.0045252,36.8244212 21.2769557,39.1286686 24.1056034,39.168 L32.8906034,39.168 C35.7192772,39.1297774 37.9926152,36.8264042 37.993709,33.9974724 C37.9948028,31.1685406 35.7232468,28.86341 32.8946034,28.823 L32.8906034,28.823 Z M33.0956034,41.987 L23.9026034,41.987 C19.5238896,41.9380177 16,38.3744878 16,33.9955 C16,29.6165122 19.5238896,26.0529823 23.9026034,26.004 L33.0956034,26.004 C37.4743172,26.0529823 40.9982068,29.6165122 40.9982068,33.9955 C40.9982068,38.3744878 37.4743172,41.9380177 33.0956034,41.987 L33.0956034,41.987 L33.0956034,41.987 Z"/>
+                    <path d="M43.3348891,38 L47.002,38 L47.002,34.1886179 C46.1991335,35.8061602 44.9187896,37.1368753 43.3348891,38 Z M41.2376851,37.6797999 C41.736668,36.5164423 41.9948731,35.2637362 41.9966732,33.9974984 C42.1202003,29.1577393 38.308152,25.1322451 33.4780304,25.0018762 L23.75,25.0018762 C25.2367988,23.1081124 27.5080185,22.0018071 29.9127837,22 L39.0935437,22 C43.0403337,22.0588384 46.3527008,24.9968079 46.8897425,28.9149928 C47.4267843,32.8331777 45.027519,36.5570769 41.2426784,37.6797999 L41.2376851,37.6797999 Z" opacity=".75"/>
+                </g>
+                </svg> -->
+            </button>
+            <div class="live-chat-tooltip">
+                <strong><a target="_blank" href="https://www.linkedin.com/in/harold-solomon-a62a0676/">LinkedIn</a></strong><br />
+            </div>
+        </div>   
+        
+        <section class="footer">
+            <p>Copyright &copy; 2021. <a href="https://www.eurokonkrete.com" target="_blank">All rights reserved by EURO KONKRETE BUILDING DYNAMICS L.L.C.</a> </p>
+        </section>
     </div>
-    <!-- CONTENT -->
-    <!-- FOOTER -->
-    <footer class="footer">
-        <p class="p-t">Copyright © 2020. All rights reserved by <span class="text-uppercase">Euro Konkrete Building Dynamics L.L.C.</span></p>
-    </footer>
-    <!--FOOTER  -->
 </div>
   

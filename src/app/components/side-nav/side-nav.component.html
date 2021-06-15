@@ -1,0 +1,113 @@
+<div class=" hidden-lg hidden-md">
+    <div class="logo">
+        <img src="../assets/images/euro_logo.png" alt="Responsive image" width="120px" >
+    </div>
+    <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav" style="margin-left:120px;">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+
+    <!--/.navbar-header-->
+    <div id="main-nav" class="collapse navbar-collapse" style="margin-top:-60px;">
+        <nav id="spy-navbar1">
+            <ul  class="nav navbar-nav" > 
+                <li><a routerLink="/" routerLinkActive="active">Home</a></li>
+                <!-- <li class='sub-menu'>
+                    <a type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        About Us 
+                        <div class='fa fa-caret-down right'></div>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a onclick="About()" href="#history" style="font-size:18px;"><span class="rect"></span>History</a></li>
+                        <li><a onclick="Pudlo()" href="#pmegroup" style="font-size:18px;"><span class="rect"></span>PME Group</a></li>
+                        <li><a onclick="Featured()" href="#pmeteam" style="font-size:18px;"><span class="rect"></span>PME Team</a></li>
+                        <li><a onclick="Blog()" href="#davidballgroup" style="font-size:18px;"><span class="rect"></span>David Ball Group</a></li>
+                    </ul>
+                </li>-->
+                <li>
+                    <a class="dropdown-toggle" id="productpage" data-toggle="dropdown" aria-expanded="true">
+                        Products
+                        <div class='fa fa-caret-down right'></div>
+                    </a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="productpage">
+                        <li>
+                            <a style="font-size:18px;"><span class="rect"></span>What is Pudlo</a>
+                        </li> 
+                        <!-- #whatispudlo -->
+                        <li><a onclick="Performaince()" href="#productperformance" style="font-size:18px;"><span class="rect"></span>Product Performance </a></li>
+                        <li><a onclick="Application()" href="#applications" style="font-size:18px;"><span class="rect"></span>Applications</a></li>
+                        <li><a onclick="Downloads()" href="#downloads" style="font-size:18px;"><span class="rect"></span>Downloads</a></li>
+                    </ul>
+                </li>
+                <!-- <li class='sub-menu'><a href='#message'>Testimonials <div class='fa fa-caret-down right'></div></a>
+                    <ul>
+                    <li><a onclick="Services()" href="#" style="font-size:18px;">Services</a></li>
+                    <li><a onclick="Certifications()" href="#" style="font-size:18px;">Certifications </a></li>
+                    <li><a onclick="Casestudys()" href="#" style="font-size:18px;">Case Studies</a></li>
+                    </ul>
+                </li>  -->
+                
+                
+            </ul>
+        </nav>
+    </div>
+</div>
+<div  class=" sidebar-navigation hidden-sm hidden-xs">
+    <div class="logo">
+        <img src="../assets/images/euro_logo.png" alt="" width="80%" class="ml-3 mt-10">
+    </div>
+    
+    <nav id="spy-navbar">
+        <ul >
+            <li><a href="#" >Home</a></li>
+            <!-- <li class='sub-menu'><a>About Us <div class='fa'></div></a>
+                <ul>
+                    <li><a onclick="About()" href="#" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>History</a></li>
+                    <li><a onclick="Pudlo()" href="#" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>PME Group</a></li>
+                    <li><a onclick="Featured()" href="#" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>PME Team</a></li>
+                    <li><a onclick="Blog()" href="#" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>David Ball Group </a></li>
+              </ul>
+            </li> -->
+            <li>
+                <a routerLink="/products" routerLinkActive="active"  [routerLinkActiveOptions]="{exact:true}"> 
+                    <!-- class="dropdown-toggle" id="productpage" data-toggle="dropdown" -->
+                    Products
+                    <!-- <div class='fa fa-caret-down right'></div> -->
+                </a>
+                <!-- <ul class="dropdown-menu dropdown-menu-right product-dropdown-menu" role="menu" aria-labelledby="productpage">
+                    <li role="presentation" class="dropdown-header">PUDLO CWP</li>
+                    <li routerLink="/products/whatispudlo" routerLinkActive="active"  [routerLinkActiveOptions]="{exact:true}" >
+                        <a>
+                            <span class="rect"></span>-What is Pudlo CWP
+                        </a>
+                    </li> 
+                    <li>
+                        <a routerLink="/products/performance" routerLinkActive="active"  [routerLinkActiveOptions]="{exact:true}" >
+                            <span class="rect"></span>-Product Performance 
+                        </a>
+                    </li>
+                    <li>
+                        <a routerLink="/products/applications" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" >
+                        <span class="rect"></span>-Applications
+                        </a>
+                    </li>
+                    <li>
+                        <a routerLink="/products/downloads" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" >
+                            <span class="rect"></span>-Downloads
+                        </a>
+                    </li>
+                </ul> -->
+            </li>
+            <!-- <li class='sub-menu'><a href='#testimonials' onclick="Services()">Testimonials <div class='fa'></div></a>
+                <ul>
+                  <li><a onclick="Services()" href="#" style="font-size:18px;">Services</a></li>
+                  <li><a onclick="Certifications()" href="#" style="font-size:18px;">Certifications </a></li>
+                  <li><a onclick="Casestudys()" href="#" style="font-size:18px;">Case Studies</a></li>
+                </ul>
+            </li> -->
+        </ul>
+    </nav>
+    
+</div>

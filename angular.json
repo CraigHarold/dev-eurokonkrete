@@ -29,15 +29,12 @@
               "src/404.html",
               "src/manifest.json"
             ],
-            "styles": [
-              "src/styles.scss",
-              "src/assets/styles/common.scss",
-              "./node_modules/bootstrap/scss/bootstrap.scss",
-              "./node_modules/font-awesome/css/font-awesome.min.css"
-            ],
+            "styles": [],
             "scripts": [
-              "node_modules/jquery/dist/jquery.js",
-              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+              "src/assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js",
+              "src/assets/js/vendor/bootstrap.min.js",
+              "src/assets/js/main.js",
+              "src/assets/js/plugins.js"
             ]
           },
           "configurations": {
