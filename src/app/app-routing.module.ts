@@ -24,6 +24,9 @@ const routes: Routes = [
   },
   {
     path: "products/:id", component: ProductsComponent
+  },
+  {
+    path: "products/pudlocwp/:id", component: ProductsComponent
   }
 ];
 

@@ -31,10 +31,7 @@
             ],
             "styles": [],
             "scripts": [
-              "src/assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js",
-              "src/assets/js/vendor/bootstrap.min.js",
-              "src/assets/js/main.js",
-              "src/assets/js/plugins.js"
+              "src/assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"
             ]
           },
           "configurations": {

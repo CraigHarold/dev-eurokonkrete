@@ -10,3 +10,11 @@
 //         }
 //     }
 // }
+
+.dropdown-menu {
+    width: 300px;
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}

@@ -42,6 +42,12 @@ export class SideNavComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  homeClick() {
+    //   setTimeout(() => {
+    //     window.location.reload(true);
+    //   },0);
+  }
+
   dropdownClick(id) {
       switch (id) {
           case "products" : 
