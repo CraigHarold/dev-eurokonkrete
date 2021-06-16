@@ -1,11 +1,12 @@
 
+// .product-dropdown-menu {
+//     opacity: 0;
+// }
 
-.product-dropdown-menu { 
-    // opacity: 0;
-}
-  
-#productpage:hover {
-    .product-dropdown-menu .product-dropdown-menu {
-        opacity: 1 !important;
-    }
-}
+// .product-dropdown { 
+//     &:hover {
+//         .product-dropdown-menu {
+//             opacity: 1 !important;
+//         }
+//     }
+// }

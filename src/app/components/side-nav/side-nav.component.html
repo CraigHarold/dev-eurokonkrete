@@ -13,7 +13,7 @@
     <div id="main-nav" class="collapse navbar-collapse" style="margin-top:-60px;">
         <nav id="spy-navbar1">
             <ul  class="nav navbar-nav" > 
-                <li><a routerLink="/" routerLinkActive="active">Home</a></li>
+                <li><a href="https://www.anuraggupta.in">Home</a></li>
                 <!-- <li class='sub-menu'>
                     <a type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                         About Us 
@@ -26,16 +26,15 @@
                         <li><a onclick="Blog()" href="#davidballgroup" style="font-size:18px;"><span class="rect"></span>David Ball Group</a></li>
                     </ul>
                 </li>-->
-                <li>
-                    <a class="dropdown-toggle" id="productpage" data-toggle="dropdown" aria-expanded="true">
+                <li class="dropdown ">
+                    <a id="productpage-m">
                         Products
                         <div class='fa fa-caret-down right'></div>
                     </a>
-                    <ul class="dropdown-menu" role="menu" aria-labelledby="productpage">
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="productpage-m">
                         <li>
                             <a style="font-size:18px;"><span class="rect"></span>What is Pudlo</a>
                         </li> 
-                        <!-- #whatispudlo -->
                         <li><a onclick="Performaince()" href="#productperformance" style="font-size:18px;"><span class="rect"></span>Product Performance </a></li>
                         <li><a onclick="Application()" href="#applications" style="font-size:18px;"><span class="rect"></span>Applications</a></li>
                         <li><a onclick="Downloads()" href="#downloads" style="font-size:18px;"><span class="rect"></span>Downloads</a></li>
@@ -61,7 +60,7 @@
     
     <nav id="spy-navbar">
         <ul >
-            <li><a href="#" >Home</a></li>
+            <li><a href="#">Home</a></li>
             <!-- <li class='sub-menu'><a>About Us <div class='fa'></div></a>
                 <ul>
                     <li><a onclick="About()" href="#" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>History</a></li>
@@ -70,35 +69,34 @@
                     <li><a onclick="Blog()" href="#" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>David Ball Group </a></li>
               </ul>
             </li> -->
-            <li>
-                <a routerLink="/products" routerLinkActive="active"  [routerLinkActiveOptions]="{exact:true}"> 
-                    <!-- class="dropdown-toggle" id="productpage" data-toggle="dropdown" -->
+            <li class="dropdown product-dropdown">
+                <a (click)="showProductDropdown = !showProductDropdown"> 
                     Products
-                    <!-- <div class='fa fa-caret-down right'></div> -->
+                    <div class='fa fa-caret-down right'></div>
                 </a>
-                <!-- <ul class="dropdown-menu dropdown-menu-right product-dropdown-menu" role="menu" aria-labelledby="productpage">
-                    <li role="presentation" class="dropdown-header">PUDLO CWP</li>
-                    <li routerLink="/products/whatispudlo" routerLinkActive="active"  [routerLinkActiveOptions]="{exact:true}" >
-                        <a>
+                <ul class="dropdown-menu dropdown-menu-right product-dropdown-menu collapse" [ngClass] ="{'show' : showProductDropdown}" role="menu" aria-labelledby="productpage">
+                    <li routerLink="/products/whatispudlo" routerLinkActive="active"  [routerLinkActiveOptions]="{exact:true}"  role="presentation" class="dropdown-header" (click)="showProductDropdown = !showProductDropdown">PUDLO CWP</li>
+                    <li>
+                        <a routerLink="/products/whatispudlo" routerLinkActive="active"  [routerLinkActiveOptions]="{exact:true}" (click)="showProductDropdown = !showProductDropdown">
                             <span class="rect"></span>-What is Pudlo CWP
                         </a>
                     </li> 
                     <li>
-                        <a routerLink="/products/performance" routerLinkActive="active"  [routerLinkActiveOptions]="{exact:true}" >
+                        <a routerLink="/products/performance" routerLinkActive="active"  [routerLinkActiveOptions]="{exact:true}" (click)="showProductDropdown = !showProductDropdown">
                             <span class="rect"></span>-Product Performance 
                         </a>
                     </li>
                     <li>
-                        <a routerLink="/products/applications" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" >
+                        <a routerLink="/products/applications" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" (click)="showProductDropdown = !showProductDropdown">
                         <span class="rect"></span>-Applications
                         </a>
                     </li>
                     <li>
-                        <a routerLink="/products/downloads" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" >
+                        <a routerLink="/products/downloads" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" (click)="showProductDropdown = !showProductDropdown">
                             <span class="rect"></span>-Downloads
                         </a>
                     </li>
-                </ul> -->
+                </ul>
             </li>
             <!-- <li class='sub-menu'><a href='#testimonials' onclick="Services()">Testimonials <div class='fa'></div></a>
                 <ul>

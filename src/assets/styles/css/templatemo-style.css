@@ -257,7 +257,13 @@ header {
 }
 
 .sidebar-navigation ul[role="menu"] {
+  margin-right: 0px;
   display: block;
+}
+
+.sidebar-navigation ul[role="menu"].collapse.show {
+  display: block;
+  visibility: visible;
 }
 .sidebar-navigation li{
   padding: 10px 6px;
@@ -359,6 +365,9 @@ header {
 
 
 /* Slider Style */
+.slider {
+  height: 100vh;
+}
 
 .slider .content-section {
   padding: 0px;
