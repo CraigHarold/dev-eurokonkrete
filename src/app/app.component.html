@@ -1,27 +1,26 @@
 
-<div class="wrapper" (window:scroll)="onWindowScroll($event)">
-    <header class="nav-down responsive-nav hidden-lg hidden-md">
-        <!------------------------------LEFT NAV-------------------------------------------->
+<div class="wrapper">
+    <!-- <header class="nav-down responsive-nav hidden-lg hidden-md">
         <app-side-nav class=" hidden-lg hidden-md"></app-side-nav>
-        <!------------------------------LEFT NAV-------------------------------------------->
-    </header>
+    </header> -->
     
     <div  class='animated bounceInDown'>
+        
+        <!------------------------------HEADER-------------------------------------------->
+        <header class="position-relative"><app-side-nav></app-side-nav></header>
+        <!------------------------------HEADER-------------------------------------------->
 
-        <!------------------------------LEFT NAV-------------------------------------------->
-        <app-side-nav></app-side-nav>
-        <!------------------------------LEFT NAV-------------------------------------------->
-
-        <!------------------------------RIGHT CONTENT--------------------------------------->
+        <!------------------------------CONTENT--------------------------------------->
         <router-outlet></router-outlet>
-        <!------------------------------RIGHT CONTENT--------------------------------------->
+        <!------------------------------CONTENT--------------------------------------->
 
         
 
         <div class="live-chat-widget">
             <button class="live-chat-button">
                 <a target="_blank" href="https://www.linkedin.com/in/harold-solomon-a62a0676/">
-                    <img src="../assets/images/linkedin.png" alt="Responsive image" width="80px" />
+                    <img class="hidden-sm hidden-xs" src="../assets/images/linkedin.png" alt="Responsive image" width="80px" />
+                    <img class="hidden-lg hidden-md" src="../assets/images/linkedin.png" alt="Responsive image" width="40px" />
                 </a>
                 <!-- <svg>
                 <g>
@@ -35,9 +34,12 @@
             </div>
         </div>   
         
+        <!------------------------------FOOTER--------------------------------------->
         <section class="footer">
-            <p>Copyright &copy; 2021. <a href="https://www.eurokonkrete.com" target="_blank">All rights reserved by EURO KONKRETE BUILDING DYNAMICS L.L.C.</a> </p>
+            <p class="hidden-lg hidden-md">Copyright &copy; 2021. <a href="https://www.eurokonkrete.com" target="_blank">All rights reserved by <br> EURO KONKRETE BUILDING DYNAMICS L.L.C.</a> </p>
+            <p class="hidden-sm hidden-xs">Copyright &copy; 2021. <a href="https://www.eurokonkrete.com" target="_blank">All rights reserved by EURO KONKRETE BUILDING DYNAMICS L.L.C.</a> </p>
         </section>
+        <!------------------------------FOOTER--------------------------------------->
     </div>
 </div>
   

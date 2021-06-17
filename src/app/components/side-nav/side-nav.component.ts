@@ -37,8 +37,6 @@ export class SideNavComponent implements OnInit {
     ];
   constructor() { }
 
-  @Input() className: string;
-
   ngOnInit(): void {
   }
 

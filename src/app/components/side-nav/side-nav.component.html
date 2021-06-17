@@ -1,4 +1,4 @@
-<div class=" hidden-lg hidden-md">
+<div class="mobile-nav hidden-lg hidden-md">
     <div class="logo">
         <img src="../assets/images/euro_logo.png" alt="Responsive image" width="120px" >
     </div>
@@ -10,10 +10,10 @@
     </button>
 
     <!--/.navbar-header-->
-    <div id="main-nav" class="collapse navbar-collapse" style="margin-top:-60px;">
+    <div id="main-nav" class="collapse navbar-collapse" style="margin-top:-12px;">
         <nav id="spy-navbar1">
             <ul  class="nav navbar-nav" > 
-                <li><a href="https://www.anuraggupta.in">Home</a></li>
+                <li><a routerLink="/" (click)="homeClick();showProductDropdown=false;">Home</a></li>
                 <!-- <li class='sub-menu'>
                     <a type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                         About Us 
@@ -26,18 +26,37 @@
                         <li><a onclick="Blog()" href="#davidballgroup" style="font-size:18px;"><span class="rect"></span>David Ball Group</a></li>
                     </ul>
                 </li>-->
-                <li class="dropdown ">
-                    <a id="productpage-m">
+                <li class="product-dropdown dropdown">
+                    <a routerLink="/products/pudlocwp" routerLinkActive="active"  [routerLinkActiveOptions]="{exact:true}" class="dropdown-toggle" (click)="showProductDropdown = !showProductDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" (mouseover)="showProductDropdown=true;" (mouseout)="showProductDropdown=false;"> 
                         Products
-                        <div class='fa fa-caret-down right'></div>
+                        <div class="fa right" [ngClass]="{
+                            'fa-caret-down' : !showProductDropdown,
+                            'fa-caret-right' : showProductDropdown
+                        }"></div>
                     </a>
-                    <ul class="dropdown-menu" role="menu" aria-labelledby="productpage-m">
+                    <ul class="dropdown-menu dropdown-menu-right collapse" role="menu" aria-labelledby="productpage" [ngClass]="{'hide': showProductDropdown === false, 'show': showProductDropdown}" (mouseover)="showProductDropdown=true;" (mouseout)="showProductDropdown=false;">
+                        <li routerLink="/products/pudlocwp" routerLinkActive="active"  [routerLinkActiveOptions]="{exact:true}" role="presentation" class="dropdown-header" (click)="showProductDropdown = false;">PUDLO CWP</li>
+                        <div class="dropdown-divider"></div>
                         <li>
-                            <a style="font-size:18px;"><span class="rect"></span>What is Pudlo</a>
+                            <a routerLink="/products/pudlocwp/about" routerLinkActive="active"  [routerLinkActiveOptions]="{exact:true}" (click)="showProductDropdown = false;">
+                                <span class="rect"></span>-What is Pudlo CWP
+                            </a>
                         </li> 
-                        <li><a onclick="Performaince()" href="#productperformance" style="font-size:18px;"><span class="rect"></span>Product Performance </a></li>
-                        <li><a onclick="Application()" href="#applications" style="font-size:18px;"><span class="rect"></span>Applications</a></li>
-                        <li><a onclick="Downloads()" href="#downloads" style="font-size:18px;"><span class="rect"></span>Downloads</a></li>
+                        <li>
+                            <a routerLink="/products/pudlocwp/performance" routerLinkActive="active"  [routerLinkActiveOptions]="{exact:true}" (click)="showProductDropdown = false;">
+                                <span class="rect"></span>-Product Performance 
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/products/pudlocwp/applications" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" (click)="showProductDropdown = false;">
+                            <span class="rect"></span>-Applications
+                            </a>
+                        </li>
+                        <li>
+                            <a routerLink="/products/pudlocwp/downloads" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" (click)="showProductDropdown = false;">
+                                <span class="rect"></span>-Downloads
+                            </a>
+                        </li>
                     </ul>
                 </li>
                 <!-- <li class='sub-menu'><a href='#message'>Testimonials <div class='fa fa-caret-down right'></div></a>
@@ -69,16 +88,17 @@
                     <li><a onclick="Blog()" href="#" style="font-size:18px;"><span class="rect"></span><span class="circle"></span>David Ball Group </a></li>
               </ul>
             </li> -->
-            <li class="product-dropdown">
-                <a class="dropdown-toggle" (click)="showProductDropdown = !showProductDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+            <li class="product-dropdown dropdown">
+                <a routerLink="/products/pudlocwp" routerLinkActive="active"  [routerLinkActiveOptions]="{exact:true}" class="dropdown-toggle" (click)="showProductDropdown = !showProductDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" (mouseover)="showProductDropdown=true;" (mouseout)="showProductDropdown=false;"> 
                     Products
                     <div class="fa right" [ngClass]="{
                         'fa-caret-down' : !showProductDropdown,
                         'fa-caret-right' : showProductDropdown
                     }"></div>
                 </a>
-                <ul class="dropdown-menu dropdown-menu-right collapse" role="menu" aria-labelledby="productpage">
-                    <li routerLink="/products" routerLinkActive="active"  [routerLinkActiveOptions]="{exact:true}"  role="presentation" class="dropdown-header" (click)="showProductDropdown = false;">PUDLO CWP</li>
+                <ul class="dropdown-menu dropdown-menu-right collapse" role="menu" aria-labelledby="productpage" [ngClass]="{'hide': showProductDropdown === false, 'show': showProductDropdown}" (mouseover)="showProductDropdown=true;" (mouseout)="showProductDropdown=false;">
+                    <li routerLink="/products/pudlocwp" routerLinkActive="active"  [routerLinkActiveOptions]="{exact:true}" role="presentation" class="dropdown-header" (click)="showProductDropdown = false;">PUDLO CWP</li>
+                    <div class="dropdown-divider"></div>
                     <li>
                         <a routerLink="/products/pudlocwp/about" routerLinkActive="active"  [routerLinkActiveOptions]="{exact:true}" (click)="showProductDropdown = false;">
                             <span class="rect"></span>-What is Pudlo CWP

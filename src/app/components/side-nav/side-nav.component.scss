@@ -1,20 +1,26 @@
-
-// .product-dropdown-menu {
-//     opacity: 0;
-// }
-
-// .product-dropdown { 
-//     &:hover {
-//         .product-dropdown-menu {
-//             opacity: 1 !important;
-//         }
-//     }
-// }
-
-.dropdown-menu {
-    width: 300px;
+.show {
+    visibility: visible !important;
 }
 
-.dropdown-toggle::after {
-    display: none !important;
+.hide {
+    visibility: hidden;
+}
+
+.dropdown {
+    .dropdown-menu {
+        width: 250px;
+        position: absolute;
+        transform: translate3d(-117px, 45px, 0px) !important;
+        top: -2px;
+        left: 0px;
+        will-change: transform;
+    }
+
+    .dropdown-toggle::after {
+        display: none !important;
+    }
+
+    .dropdown-divider {
+        border-top-color: #dfdfdf;
+    }
 }

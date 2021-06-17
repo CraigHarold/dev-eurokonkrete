@@ -20,7 +20,7 @@ export class ProductsComponent {
             switch(this.id) {
                 default: 
                     if (!this.id) {
-                        id = document.getElementById("products");
+                        id = document.getElementById("pudlocwp");
                     } else {
                         id = document.getElementById(this.id);
                     }
